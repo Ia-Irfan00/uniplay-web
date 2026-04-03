@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniPlay | High-Performance Game Systems</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <style>
+   <style>
         :root {
             --bg: #0B0C10;
             --surface: #1F2833;
@@ -24,11 +24,36 @@
 
         /* --- VISUALS & TECH --- */
         .tech-specs { padding: 60px; background: var(--surface); border-radius: 20px; margin: 40px 0; border: 1px solid rgba(102, 252, 241, 0.1); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
-        .card { background: var(--bg); padding: 30px; border-radius: 12px; border: 1px solid transparent; transition: var(--epic-transition); }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin: 30px auto; 
+            max-width: 850px; /* Constrains the width so images don't balloon */
+        }
+
+        .card { 
+            background: var(--bg); 
+            padding: 15px; /* Tighter padding for a sleeker look */
+            border-radius: 12px; 
+            border: 1px solid transparent; 
+            transition: var(--epic-transition); 
+            overflow: hidden;
+        }
+
         .card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .card h3 { color: var(--accent); font-family: 'JetBrains Mono', monospace; margin-top: 0; }
-        img { width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); min-height: 200px; background: #000; }
+        
+        img { 
+            width: 100%; 
+            max-width: 400px; /* Limits individual image size */
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            background: #000; 
+            filter: brightness(0.9); /* Makes the UI screenshots feel integrated */
+        }
 
         /* --- LEGAL FOOTER --- */
         .legal-footer { 
@@ -39,9 +64,6 @@
             font-size: 0.85rem;
             color: #8892b0;
         }
-        .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
-        .legal-section h3 { color: var(--white); font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; border-bottom: 1px solid var(--surface); padding-bottom: 10px; }
-        
         footer { padding: 40px 0; text-align: center; opacity: 0.5; font-size: 0.8rem; }
     </style>
 </head>
