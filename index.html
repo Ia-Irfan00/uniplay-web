@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPlay | High-Performance Game Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0B0C10;
+            --surface: #1F2833;
+            --accent: #66FCF1;
+            --text: #C5C6C7;
+            --white: #FFFFFF;
+            --epic-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        body { background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- HERO --- */
+        .hero { padding: 120px 0; text-align: center; background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 80%); }
+        h1 { font-size: 5rem; color: var(--white); margin: 0; letter-spacing: -3px; }
+
+        /* --- VISUALS & TECH --- */
+        .tech-specs { padding: 60px; background: var(--surface); border-radius: 20px; margin: 40px 0; border: 1px solid rgba(102, 252, 241, 0.1); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+        .card { background: var(--bg); padding: 30px; border-radius: 12px; border: 1px solid transparent; transition: var(--epic-transition); }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card h3 { color: var(--accent); font-family: 'JetBrains Mono', monospace; margin-top: 0; }
+        img { width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); min-height: 200px; background: #000; }
+
+        /* --- LEGAL FOOTER --- */
+        .legal-footer { 
+            background-color: #050505; 
+            padding: 80px 0; 
+            margin-top: 100px; 
+            border-top: 1px solid rgba(102, 252, 241, 0.2);
+            font-size: 0.85rem;
+            color: #8892b0;
+        }
+        .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .legal-section h3 { color: var(--white); font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; border-bottom: 1px solid var(--surface); padding-bottom: 10px; }
+        
+        footer { padding: 40px 0; text-align: center; opacity: 0.5; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <section class="hero container">
+        <h1>UniPlay</h1>
+        <p style="font-size: 1.5rem; color: var(--accent); font-weight: 700;">Sovereign Performance Engine</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card"><img src="dashboard.png." alt="UniPlay Library Dashboard"></div>
+            <div class="card"><img src="performance.png" alt="UniPlay Performance Stats"></div>
+        </div>
+
+      <section class="tech-specs">
+            <h2 style="color: white; margin-top: 0;">Engineered for Zero-Stutter Performance</h2>
+            <p>UniPlay is built on a <strong>Decoupled Bridge Architecture</strong> using <strong>Rust and Tauri</strong>. By operating at the system level with near-zero latency, UniPlay ensures that your hardware resources are prioritized for the game environment, not the launcher.</p>
+            
+            <div class="card" style="margin-top: 20px; border-left: 3px solid var(--accent);">
+                <p><strong>The Paging Advantage:</strong> Utilizing Rust’s Zero-Cost Abstractions, UniPlay maintains a persistent footprint of <strong>sub-40MB while gaming</strong>. Upon game execution, our <strong>Scout Thread</strong> issues a high-priority system signal to background processes. By triggering a targeted memory swap into the <code>pagefile.sys</code>, UniPlay reclaims physical hardware memory blocks, ensuring your game has an unencumbered path to your RAM. This results in significantly more stable frame times and reduced input lag through advanced system-level resource management.</p>
+            </div>
+        </section>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 UniPlay LTD. All Rights Reserved.</p>
+        <p>
+            <a href="tos.html" style="color: var(--accent); text-decoration: none; margin-right: 15px;">Terms of Service</a>
+            <a href="privacy.html" style="color: var(--accent); text-decoration: none;">Privacy Policy</a>
+        </p>
+    </div>
+</footer>
