@@ -55,6 +55,24 @@
             filter: brightness(0.9); /* Makes the UI screenshots feel integrated */
         }
 
+        /* --- PRICING SECTION --- */
+        .pricing-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin: 40px auto; 
+            max-width: 850px; 
+        }
+        .price-card { 
+            background: var(--surface); 
+            padding: 40px 30px; 
+            border-radius: 20px; 
+            text-align: center; 
+            border: 1px solid rgba(102, 252, 241, 0.1);
+        }
+        .price-amount { font-size: 2.5rem; color: var(--accent); font-weight: 900; margin: 10px 0; }
+        
+
         /* --- LEGAL FOOTER --- */
         .legal-footer { 
             background-color: #050505; 
@@ -95,6 +113,30 @@
                 <p><strong>The Paging Advantage:</strong> Utilizing Rust’s Zero-Cost Abstractions, UniPlay maintains a persistent footprint of <strong>sub-40MB while gaming</strong>. Upon game execution, our <strong>Scout Thread</strong> issues a high-priority system signal to background processes. By triggering a targeted memory swap into the <code>pagefile.sys</code>, UniPlay reclaims physical hardware memory blocks, ensuring your game has an unencumbered path to your RAM. This results in significantly more stable frame times and reduced input lag through advanced system-level resource management.</p>
             </div>
         </section>
+        <section class="container" style="margin-bottom: 100px;">
+    <h2 style="text-align: center; color: white; margin-bottom: 40px; font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -1px;">System Access Tiers</h2>
+
+    <div class="pricing-grid">
+        <div class="price-card">
+            <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">Monthly Subscription</h3>
+            <div class="price-amount">£4.99</div>
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
+                £4.99 every month for custom rewards, CSS themes.
+            </p>
+        </div>
+
+        <div class="price-card" style="border-color: var(--accent); position: relative;">
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: var(--bg); padding: 2px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 900; letter-spacing: 1px;">SOVEREIGN</div>
+            
+            <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">Lifetime Pro</h3>
+            <div class="price-amount">£29.99</div>
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
+                £29.99 for a one time payment and lifetime subscription to UniPlay Pro, unlocking pro rewards and a custom badge.
+            </p>
+        </div>
+    </div>
+</section>
+
 
 
 <footer>
