@@ -126,29 +126,35 @@
             </p>
         </div>
 
-        <div class="price-card" style="border-color: var(--sovereign); position: relative; padding: 60px 35px;">
+      <div class="price-card" style="border-color: var(--sovereign); position: relative; padding: 60px 35px;">
     <div style="
         position: absolute; 
-        top: -14px; 
+        top: -20px; /* Moved slightly further up */
         left: 50%; 
         transform: translateX(-50%); 
-        background: var(--sovereign); 
-        color: var(--bg); 
-        padding: 4px 20px; /* Increased horizontal padding */
-        border-radius: 20px; 
-        font-size: 0.7rem; 
-        font-weight: 900; 
-        letter-spacing: 2px; /* Increased letter spacing for clarity */
-        box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3); /* Adds depth */
+        background: #ffffff; /* Clean white background */
+        color: #1a1a1a; /* Darker, high-contrast text */
+        padding: 5px 22px; 
+        border-radius: 4px; /* Slightly sharper corners for that 'paper' look */
+        border: 1px solid var(--sovereign); /* Gold frame */
+        font-family: 'Source Serif Pro', 'Georgia', serif; /* Claude-style serif */
+        font-size: 0.75rem; 
+        font-weight: 600; 
+        font-style: italic; /* Adds that sophisticated touch */
+        letter-spacing: 0.5px; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
         white-space: nowrap;
-    ">ONE-TIME</div>
+        z-index: 10;
+    ">
+        One-Time Purchase
+    </div>
             
-            <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">UniPlay Pro (Lifetime)</h3>
-            <div class="price-amount">£29.99</div>
-            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
-                A single £29.99 payment for permanent access. Includes the exact same features as the monthly tier: <strong>Advanced Ledger</strong>, <strong>Per-Game Profiles</strong>, and full <strong>Session History</strong> analytics.
-            </p>
-        </div>
+           <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">UniPlay Pro (Lifetime)</h3>
+    <div class="price-amount" style="margin: 25px 0;">£29.99</div>
+    <p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: var(--text);">
+        A single £29.99 payment for permanent access. Includes the exact same features as the monthly tier: <strong>Advanced Ledger</strong>, <strong>Per-Game Profiles</strong>, and full <strong>Session History</strong> analytics.
+    </p>
+</div>
     </div>
     
     <p style="text-align: center; margin-top: 30px; font-size: 0.85rem; opacity: 0.7;">
