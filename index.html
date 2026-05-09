@@ -89,7 +89,7 @@
 
     <section class="hero container">
         <h1>UniPlay</h1>
-        <p style="font-size: 1.5rem; color: var(--accent); font-weight: 700;">Sovereign Performance Engine</p>
+        <p style="font-size: 1.5rem; color: var(--accent); font-weight: 700;"> A lighter system. A cleaner game.</p>
     </section>
 
    <div class="grid">
@@ -106,12 +106,24 @@
 </div>
 
       <section class="tech-specs">
-            <h2 style="color: white; margin-top: 0;">Engineered for Zero-Stutter Performance</h2>
-            <p>UniPlay is built on a <strong>Decoupled Bridge Architecture</strong> using <strong>Rust and Tauri</strong>. By operating at the system level with near-zero latency, UniPlay ensures that your hardware resources are prioritized for the game environment, not the launcher.</p>
-            
-            <div class="card" style="margin-top: 20px; border-left: 3px solid var(--accent);">
-                <p><strong>The Paging Advantage:</strong> Utilizing Rust’s Zero-Cost Abstractions, UniPlay maintains a persistent footprint of <strong>sub-40MB while gaming</strong>. Upon game execution, our <strong>Scout Thread</strong> issues a high-priority system signal to background processes. By triggering a targeted memory swap into the <code>pagefile.sys</code>, UniPlay reclaims physical hardware memory blocks, ensuring your game has an unencumbered path to your RAM. This results in significantly more stable frame times and reduced input lag through advanced system-level resource management.</p>
-            </div>
+           <h2 style="color: white; margin-top: 0;">
+    More RAM for your game. Less clutter in the background.
+</h2>
+<p>UniPlay is built with <strong>Rust and Tauri</strong>, When you launch a game, UniPlay 
+tells Windows to move idle background processes — Steam helpers, Discord, 
+Spotify — out of physical RAM and into the pagefile, freeing up real memory 
+for your game.</p>
+
+        
+<div class="card" style="margin-top: 20px; border-left: 3px solid var(--accent);">
+    <p><strong>What this means in practice:</strong> Moving idle background 
+    processes out of physical RAM gives your game more breathing room on 
+    launch. Whether you feel the difference depends on your system, your 
+    RAM, and the game — we don't promise miracles. What UniPlay does 
+    guarantee is an honest measurement of exactly how much memory was moved, 
+    logged in your session ledger. You can verify it yourself in Task Manager. 
+    The numbers will match.</p>
+</div>
         </section>
         <section>
     <h2 style="text-align: center;">Access Tiers</h2>
@@ -122,8 +134,10 @@
         <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">UniPlay Monthly</h3>
         <div class="price-amount">£4.99</div>
         <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
-            Unlock the full Sovereign Engine toolkit on a flexible monthly basis. Gain immediate access to the Advanced Ledger, Per-Game Optimization, and Session History. Low entry cost. Cancel anytime.
-        </p>
+    Full access to UniPlay on a flexible monthly basis. Includes the 
+    Advanced Ledger, Per-Game Optimization, and Session History. 
+    Cancel anytime.
+</p>
     </div>
 
     <div class="price-card" style="border-color: var(--accent); position: relative; padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between;">
@@ -150,9 +164,10 @@
         <div>
             <h3 style="color: var(--white); margin: 0; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; font-size: 1.1rem;">UniPlay Yearly</h3>
             <div class="price-amount">£39.99</div>
-            <p style="margin: 0 0 20px 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
-                Total System Sovereignty. The definitive standard for long-term hardware efficiency. One annual renewal for a year of unencumbered gaming.
-            </p>
+           <p style="margin: 0 0 20px 0; font-size: 0.95rem; line-height: 1.6; color: var(--text);">
+    Everything in monthly, one annual payment. The best value for 
+    anyone who wants UniPlay running long term.
+</p>
         </div>
 
         <ul style="
