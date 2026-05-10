@@ -36,12 +36,14 @@
 
     <div class="section-box">
         <h2>1. Information We Collect</h2>
-        <p>To provide high-performance optimization and analytics, we collect the following data:</p>
+        <p>To provide UniPlay's core features, we collect::</p>
         <ul>
             <li><strong>Account Information:</strong> Name and email address provided during the purchase process via our Merchant of Record.</li>
             <li><strong>Unique Hardware Identifier (UUID):</strong> A non-reversible hash of your hardware components used to verify license authenticity and prevent unauthorized distribution.</li>
             <li><strong>Steam ID (Public):</strong> Used to synchronize game library metadata and provide per-game performance profiles.</li>
-            <li><strong>Technical Analytics:</strong> Data regarding RAM reclamation, process priority shifts, and session duration to populate your "Ledger" dashboard.</li>
+            <li><strong>Technical Analytics:</strong> RAM reclamation totals and session data 
+used to populate your Ledger. Free users see total RAM saved 
+only. Pro users see full per-game session history.</li>
         </ul>
     </div>
 
@@ -49,7 +51,8 @@
     <p>Under UK GDPR, we process your data based on the following legal grounds:</p>
     <ul>
         <li><strong>Contractual Necessity:</strong> To provide the Pro features (Analytics, Ledger, Profiles) you have subscribed to.</li>
-        <li><strong>Legitimate Interests:</strong> To protect our intellectual property (the Decoupled Bridge Architecture) and ensure software security via hardware-locked licensing.</li>
+        <li><strong>Legitimate Interests:</strong> To protect our intellectual property and ensure software 
+security via hardware-locked licensing.</li>
     </ul>
 
    <h2>3. Data Retention & Third Parties</h2>
@@ -57,7 +60,7 @@
 <ul>
     <li><strong>Lemon Squeezy, LLC:</strong> Our Merchant of Record handles all payment processing. UniPlay LTD does not store or see your credit card or billing details.</li>
     <li><strong>Data Retention:</strong> Account data and hardware identifiers are retained for the duration of your active subscription. Upon cancellation or non-renewal, data is archived for 12 months to allow for seamless account reactivation before being permanently purged, unless legal obligations require longer retention.</li>
-    <li><strong>Security:</strong> Hardware IDs are strictly used to prevent license fraud and ensure your "Sovereign" status is locked to your machine.</li>
+    <li><strong>Security:</strong> Hardware IDs are strictly used to prevent license fraud and ensure your Pro license is locked to your machine.</li>
 </ul>
 
     <h2>4. Your Rights</h2>
@@ -70,7 +73,9 @@
     </ul>
 
     <h2>5. Data Security</h2>
-    <p>Your analytics data is processed locally by the UniPlay Scout Thread (Rust) before being synchronized with your account. We implement industry-standard encryption to protect data in transit between the client and our servers.</p>
+    <p>Your analytics data is processed locally on your machine before 
+being stored in your session ledger. We implement industry-standard 
+encryption to protect data in transit.</p>
 
     <h2>6. Contact & Controller</h2>
     <p>UniPlay LTD is the data controller for your information.</p>
