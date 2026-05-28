@@ -1,0 +1,18 @@
+{
+  "name": "uniplay-web",
+  "version": "1.0.0",
+  "description": "UniPlay — A lighter system. A cleaner game.",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "lint": "echo 'No linting configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": ["uniplay", "gaming", "optimization"],
+  "author": "UniPlay LTD",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
