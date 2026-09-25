@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/(.*)", "destination": "https://irfan06.itch.io/full-stop", "permanent": false }
+  ]
+}
